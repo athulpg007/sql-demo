@@ -1,0 +1,8 @@
+sudo docker run --name db -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password mysql:5.7
+
+sudo docker exec -it db /bin/bash
+
+sudo docker cp Documents/sql-demo/companydb.txt  6de6225c7f97:/companydb.tx
+
+mysql
+
